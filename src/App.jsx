@@ -1,35 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <div className="relative h-screen w-screen">
+      <div className="absolute z-10 top-0 left-0 h-full w-full flex flex-col py-20 xs:pb-40 justify-between font-medium text-white text-4xl italic">
+        <p className="text-center -ml-5 animate-pulse">
+          The Thoughts of A Person
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <img
+        className="object-cover h-full w-full"
+        src="https://res.cloudinary.com/do8rpl9l4/image/upload/v1722595996/The_Moon_mrsvdx.jpg"
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;
