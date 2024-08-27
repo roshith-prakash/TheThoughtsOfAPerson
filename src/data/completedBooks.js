@@ -6,5 +6,6 @@ export let completedBooks = [
     "A pilgrimage to Sabarimala - K Vaidyanathan",
     "The subtle art of not giving a f*** - Mark Manson",
     "The Harry Potter Series - JK Rowling",
-    "The Sherlock Holmes Novels & short stories - Arthur Conan Doyle"
+    "The Sherlock Holmes Novels & short stories - Arthur Conan Doyle",
+    "Dragon Age : The Calling - David Gaider"
 ]
