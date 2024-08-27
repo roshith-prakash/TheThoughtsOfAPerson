@@ -21,6 +21,17 @@ const Home = () => {
           {currentlyReading}
         </div>
 
+         {/* Books to be read */}
+        <div className="px-8 py-10 bg-white bg-opacity-15 text-white text-2xl rounded-lg italic text-justify">
+          <p className="mb-5 text-3xl">To be read :</p>
+
+          <ol className="list-decimal pl-8 flex flex-col gap-y-3">
+            {toBeRead.map((book, index) => {
+              return <li key={index}>{book}</li>;
+            })}
+          </ol>
+        </div>
+
         {/* Books completed */}
         <div className="px-8 py-10 bg-white bg-opacity-15 text-white text-2xl rounded-lg italic text-justify">
           <p className="mb-5 text-3xl">Books on the Shelf:</p>
@@ -32,16 +43,7 @@ const Home = () => {
           </ol>
         </div>
 
-        {/* Books to be read */}
-        <div className="px-8 py-10 bg-white bg-opacity-15 text-white text-2xl rounded-lg italic text-justify">
-          <p className="mb-5 text-3xl">To be read :</p>
-
-          <ol className="list-decimal pl-8 flex flex-col gap-y-3">
-            {toBeRead.map((book, index) => {
-              return <li key={index}>{book}</li>;
-            })}
-          </ol>
-        </div>
+       
       </div>
     </div>
   );
