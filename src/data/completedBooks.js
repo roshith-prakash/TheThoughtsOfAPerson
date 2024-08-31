@@ -1,4 +1,5 @@
 export let completedBooks = [
+    "The Murder of Roger Ackroyd - Agatha Christie",
     "Steal Like an Artist - Austin Kleon",
     "The Murder on the Orient Express - Agatha Christie",
     "Before the coffee gets cold - Toshikazu Kawaguchi",

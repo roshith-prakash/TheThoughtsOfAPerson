@@ -1,1 +1,1 @@
-export let currentlyReading = "The Murder of Roger Ackroyd - Agatha Christie"
+export let currentlyReading = "Set Fire to the Gods - Kristen Simmons and Sara Raasch"
