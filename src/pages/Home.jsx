@@ -12,7 +12,16 @@ const Home = () => {
         <p className="px-8 py-10 bg-black bg-opacity-20 shadow text-white rounded-lg italic">
           Hey! I'm R, a part-time writer and fiction enthusiast. I mainly craft
           spoken word and freestyle poetry, with the occasional short story
-          thrown in. I hope you enjoy your time here!
+          thrown in. I also act as a script-writer for my friends over at
+          <a
+            href="https://www.instagram.com/chaiaurfriends/"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-2 animate-pulse"
+          >
+            @chaiaurfriends.
+          </a>{" "}
+          I hope you enjoy your time here!
         </p>
 
         {/* Currently Reading */}
