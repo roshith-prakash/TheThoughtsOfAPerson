@@ -1,1 +1,1 @@
-export let currentlyReading = "Set Fire to the Gods - Kristen Simmons and Sara Raasch"
+export let currentlyReading = "The Night Train at Deoli - Ruskin Bond"
