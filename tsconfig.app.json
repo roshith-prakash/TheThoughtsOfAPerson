@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    // ...
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+    // ...
+  }
+}

@@ -1,12 +1,28 @@
-/** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx}"],
+  content: ["./src/**/*.{html,js,jsx,tsx}"],
+  darkMode: 'class',
   theme: {
     extend: {
-      backgroundImage: {
-        home: "url('https://res.cloudinary.com/do8rpl9l4/image/upload/v1722595996/The_Moon_mrsvdx.jpg')"
-      }
+      colors: {
+        "darkbg": "#181818",
+        "secondarydarkbg": "#1E1E1E",
+        "darkmodetext": "#E4E4E4",
+        "cta": "#9b0ced",
+        "hovercta": "#7123b0",
+        "black": "#000000",
+        "white": "#ffffff",
+        "heading": "#1e1e1f",
+        "grey": "#f5f5f5",
+        "error": "#f23f3f",
+        "darkmodeCTA": "#b458ff"
+      },
+      fontFamily: {
+        'inter': ['Inter', 'system-ui'],
+        'dmSans': ['DM Sans', 'system-ui']
+      },
     },
+
   },
   plugins: [],
 }
