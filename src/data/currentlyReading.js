@@ -1,1 +1,0 @@
-export let currentlyReading = "The Night Train at Deoli - Ruskin Bond"
