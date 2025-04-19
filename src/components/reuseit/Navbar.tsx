@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
-import { IoMoon } from "react-icons/io5";
-import { IoSunnySharp } from "react-icons/io5";
-// Please check import paths
-import { ContextValue, useDarkMode } from "../context/DarkModeContext";
+import { PiLinktreeLogoBold } from "react-icons/pi";
+import { FaYoutube } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 const Navbar = () => {
-  const { isDarkMode, toggleDarkMode } = useDarkMode() as ContextValue;
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -19,56 +17,50 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`dark:bg-darkbg relative z-2 flex items-center justify-between bg-white px-10 py-3 font-sans shadow-xl dark:text-white dark:shadow-md dark:shadow-white/30`}
+        className={`bg-[#12071f]/95 font-body sticky top-0  z-2 flex items-center justify-between px-10 py-5 font-f1 border-b-1 border-white/25 text-white`}
       >
-        <Link to="/" aria-label="Home">
-          <img
-            src={
-              "https://res.cloudinary.com/do8rpl9l4/image/upload/v1736843158/logodark_gs3pnp.png"
-            }
-            alt="Logo"
-            className="h-12 cursor-pointer"
-          />
+        {/* The Thoughts of A Person */}
+        <Link to="/" aria-label="Home" className="flex gap-x-2 items-center">
+          <span className="font-nav font-normal text-xl md:text-2xl">
+            The Thoughts Of A Person
+          </span>
         </Link>
 
         {/* LG screen links */}
         <div className="hidden items-center gap-x-8 font-medium lg:flex">
-          <Link
-            to="/"
-            className="hover:text-cta dark:hover:text-darkmodeCTA transition-all"
+          {/* Youtube */}
+          <a
+            href="https://www.youtube.com/@RoshithPrakash"
+            rel="noreferrer"
+            target="_blank"
+            className=" flex gap-x-1 items-center hover:text-darkmodeCTA transition-all"
           >
-            Home
-          </Link>
-        </div>
+            <FaYoutube className="text-2xl" /> Youtube
+          </a>
 
-        {/* Theme change button */}
-        <button
-          aria-label="Change Theme"
-          className="hidden cursor-pointer lg:flex"
-          onClick={toggleDarkMode}
-        >
-          {isDarkMode ? (
-            <IoSunnySharp className="hover:text-darkmodeCTA text-2xl transition-all" />
-          ) : (
-            <IoMoon className="hover:text-cta text-2xl transition-all" />
-          )}
-        </button>
+          {/* Instagram */}
+          <a
+            target="_blank"
+            href="https://www.instagram.com/thethoughtsofaperson"
+            rel="noreferrer"
+            className="flex gap-x-1 items-center hover:text-darkmodeCTA transition-all"
+          >
+            <FaInstagram className="text-2xl" /> Instagram
+          </a>
+
+          {/* Linktree */}
+          <a
+            target="_blank"
+            href="https://linktr.ee/thethoughtsofaperson"
+            rel="noreferrer"
+            className="flex gap-x-1 items-center hover:text-darkmodeCTA transition-all"
+          >
+            <PiLinktreeLogoBold className="text-2xl" /> LinkTree
+          </a>
+        </div>
 
         {/* Open Drawer */}
         <div className="flex items-center gap-x-10 font-medium lg:hidden">
-          {/* Toggle Light & Dark Mode */}
-          <button
-            className="cursor-pointer"
-            aria-label="Change Theme"
-            onClick={toggleDarkMode}
-          >
-            {isDarkMode ? (
-              <IoSunnySharp className="hover:text-cta text-xl transition-all" />
-            ) : (
-              <IoMoon className="hover:text-cta text-xl transition-all" />
-            )}
-          </button>
-
           {/* Hamburger Button to open the drawer */}
           <button onClick={() => setOpen(true)} className="cursor-pointer">
             <RxHamburgerMenu className="text-xl" aria-label="Open menu" />
@@ -77,34 +69,70 @@ const Navbar = () => {
 
         {/* Drawer Menu */}
         <div
-          className={`dark:bg-darkbg scroller fixed top-0 right-0 z-50 h-screen w-full overflow-y-auto bg-white pb-6 text-center text-xl shadow-md md:text-lg ${
+          className={`bg-[#1D0D30] scroller fixed top-0 right-0 z-50 h-screen w-full overflow-y-auto pb-6 text-center text-xl shadow-md md:text-lg ${
             open ? "translate-x-0" : "translate-x-[100%]"
           } transition-all duration-500`}
           role="dialog"
           aria-modal="true"
           aria-label="Drawer Menu"
         >
-          <div className="mb-14 flex items-center justify-between px-10 pt-3.5 lg:px-10">
-            <button onClick={() => handleSearch("/")} aria-label="Home">
-              <img src="Your Logo" alt="Logo" className="h-12 cursor-pointer" />
+          <div className=" flex items-center justify-between px-10 py-5 mt-0.5 lg:px-10">
+            <button
+              className="cursor-pointer flex gap-x-2 items-center"
+              onClick={() => handleSearch("/")}
+              aria-label="Home"
+            >
+              <span className="font-nav font-normal text-xl md:text-2xl">
+                The Thoughts Of A Person
+              </span>
             </button>
             <RxCross2
               onClick={() => setOpen(false)}
-              className="hover:text-cta cursor-pointer text-2xl transition-all"
+              className="hover:text-cta dark:hover:text-darkmodeCTA cursor-pointer text-2xl transition-all"
               aria-label="Close menu"
             />
           </div>
 
           <div className="mt-20 flex flex-col items-center justify-between gap-y-12 px-8 text-xl font-medium">
             {/*  Add your links here */}
-            <button
+            {/* <button
               onClick={() => handleSearch("/")}
               className="hover:text-cta w-fit cursor-pointer transition-all"
               tabIndex={0}
               aria-label="Go to Home"
             >
               Home
-            </button>
+            </button> */}
+
+            {/* Youtube */}
+            <a
+              href="https://www.youtube.com/@RoshithPrakash"
+              rel="noreferrer"
+              target="_blank"
+              className=" flex gap-x-2 items-center hover:text-darkmodeCTA transition-all"
+            >
+              <FaYoutube className="text-2xl" /> Youtube
+            </a>
+
+            {/* Instagram */}
+            <a
+              target="_blank"
+              href="https://www.instagram.com/thethoughtsofaperson"
+              rel="noreferrer"
+              className="flex gap-x-2 items-center hover:text-darkmodeCTA transition-all"
+            >
+              <FaInstagram className="text-2xl translate-0.5" /> Instagram
+            </a>
+
+            {/* Linktree */}
+            <a
+              target="_blank"
+              href="https://linktr.ee/thethoughtsofaperson"
+              rel="noreferrer"
+              className="flex gap-x-2 items-center hover:text-darkmodeCTA transition-all"
+            >
+              <PiLinktreeLogoBold className="text-2xl" /> LinkTree
+            </a>
           </div>
 
           {/* Footer Text   */}

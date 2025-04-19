@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 @import "tailwindcss";
-
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -13,17 +13,30 @@
   --color-error: #f23f3f;
   --color-darkmodeCTA: #b458ff;
 
+  /* Custom Fonts */
+  --font-title: "Great Vibes", cursive;
+  --font-body: "Merriweather", serif;
+  --font-nav: "Dancing Script", cursive;
+
   /* Custom Animations for the Modal */
   --animate-fadeIn: fadeIn 0.3s ease-in-out;
   @keyframes fadeIn {
-    0% { opacity: 0.3; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   --animate-fadeOut: fadeOut 0.3s ease-in-out;
   @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0.3; }
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.3;
+    }
   }
 }
 

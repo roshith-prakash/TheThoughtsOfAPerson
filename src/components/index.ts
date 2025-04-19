@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
-import CTAButton from "./CTAButton";
+import Navbar from "./reuseit/Navbar";
+import PrimaryButton from "./reuseit/PrimaryButton";
 
-export { Navbar, CTAButton };
+export { Navbar, PrimaryButton };
