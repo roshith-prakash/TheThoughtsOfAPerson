@@ -17,23 +17,23 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`bg-[#12071f]/95 font-body sticky top-0  z-2 flex items-center justify-between px-10 py-5 font-f1 border-b-1 border-white/25 text-white`}
+        className={`bg-[#12071f]/95 sticky top-0  z-2 flex items-center justify-between px-10 py-5 font-f1 border-b-1 border-white/25 text-white`}
       >
         {/* The Thoughts of A Person */}
         <Link to="/" aria-label="Home" className="flex gap-x-2 items-center">
-          <span className="font-nav font-normal text-xl md:text-2xl">
+          <span className="font-nav font-semibold tracking-wider text-2xl md:text-3xl">
             The Thoughts Of A Person
           </span>
         </Link>
 
         {/* LG screen links */}
-        <div className="hidden items-center gap-x-8 font-medium lg:flex">
+        <div className="hidden font-nav text-xl tracking-widest font-bold items-center gap-x-8 lg:flex">
           {/* Youtube */}
           <a
             href="https://www.youtube.com/@RoshithPrakash"
             rel="noreferrer"
             target="_blank"
-            className=" flex gap-x-1 items-center hover:text-darkmodeCTA transition-all"
+            className=" flex gap-x-2 items-center hover:scale-110 transition-all"
           >
             <FaYoutube className="text-2xl" /> Youtube
           </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             target="_blank"
             href="https://www.instagram.com/thethoughtsofaperson"
             rel="noreferrer"
-            className="flex gap-x-1 items-center hover:text-darkmodeCTA transition-all"
+            className="flex gap-x-2 items-center hover:scale-110 transition-all"
           >
             <FaInstagram className="text-2xl" /> Instagram
           </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
             target="_blank"
             href="https://linktr.ee/thethoughtsofaperson"
             rel="noreferrer"
-            className="flex gap-x-1 items-center hover:text-darkmodeCTA transition-all"
+            className="flex gap-x-2 items-center hover:scale-110 transition-all"
           >
             <PiLinktreeLogoBold className="text-2xl" /> LinkTree
           </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
               onClick={() => handleSearch("/")}
               aria-label="Home"
             >
-              <span className="font-nav font-normal text-xl md:text-2xl">
+              <span className="font-nav font-semibold tracking-wider text-2xl md:text-3xl">
                 The Thoughts Of A Person
               </span>
             </button>
@@ -93,7 +93,7 @@ const Navbar = () => {
             />
           </div>
 
-          <div className="mt-20 flex flex-col items-center justify-between gap-y-12 px-8 text-xl font-medium">
+          <div className="mt-20 flex flex-col font-nav tracking-wider text-4xl items-center justify-between gap-y-12 px-8 font-medium">
             {/*  Add your links here */}
             {/* <button
               onClick={() => handleSearch("/")}
@@ -109,9 +109,9 @@ const Navbar = () => {
               href="https://www.youtube.com/@RoshithPrakash"
               rel="noreferrer"
               target="_blank"
-              className=" flex gap-x-2 items-center hover:text-darkmodeCTA transition-all"
+              className=" flex gap-x-2 items-center hover:scale-110 transition-all"
             >
-              <FaYoutube className="text-2xl" /> Youtube
+              <FaYoutube className="text-4xl" /> Youtube
             </a>
 
             {/* Instagram */}
@@ -119,9 +119,9 @@ const Navbar = () => {
               target="_blank"
               href="https://www.instagram.com/thethoughtsofaperson"
               rel="noreferrer"
-              className="flex gap-x-2 items-center hover:text-darkmodeCTA transition-all"
+              className="flex gap-x-2 items-center hover:scale-110 transition-all"
             >
-              <FaInstagram className="text-2xl translate-0.5" /> Instagram
+              <FaInstagram className="text-4xl translate-0.5" /> Instagram
             </a>
 
             {/* Linktree */}
@@ -129,9 +129,9 @@ const Navbar = () => {
               target="_blank"
               href="https://linktr.ee/thethoughtsofaperson"
               rel="noreferrer"
-              className="flex gap-x-2 items-center hover:text-darkmodeCTA transition-all"
+              className="flex gap-x-2 items-center hover:scale-110 transition-all"
             >
-              <PiLinktreeLogoBold className="text-2xl" /> LinkTree
+              <PiLinktreeLogoBold className="text-4xl" /> LinkTree
             </a>
           </div>
 
