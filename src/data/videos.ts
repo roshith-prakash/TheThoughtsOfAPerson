@@ -1,6 +1,22 @@
 export const videos = [
-  "https://www.youtube.com/embed/M5UAZ7B4S00?si=vYl-mdELFffyY58e",
-  "https://www.youtube.com/embed/qFRqZfQJ7NM?si=er7mLp0xddV4kVND",
-  "https://www.youtube.com/embed/O_SwWfGEfqc?si=5N1kf68fsTtdRbrR",
-  "https://www.youtube-nocookie.com/embed/fk8wa_0zpxQ?si=zR3BBrOkcRg3GblM",
+  {
+    title: "I shouldn't even be up here.",
+    videoSrc: "https://www.youtube.com/embed/M5UAZ7B4S00",
+    type: "story",
+  },
+  {
+    title: "Live stories Vlog",
+    videoSrc: "https://www.youtube.com/embed/qFRqZfQJ7NM",
+    type: "vlog",
+  },
+  {
+    title: "Leap of Faith",
+    videoSrc: "https://www.youtube.com/embed/O_SwWfGEfqc",
+    type: "story",
+  },
+  {
+    title: "Ted Mosby was (not?) an idiot",
+    videoSrc: "https://www.youtube-nocookie.com/embed/fk8wa_0zpxQ",
+    type: "story",
+  },
 ];

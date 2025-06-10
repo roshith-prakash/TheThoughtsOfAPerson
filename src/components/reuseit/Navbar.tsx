@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`bg-[#12071f]/95 sticky top-0  z-2 flex items-center justify-between px-10 py-5 font-f1 border-b-1 border-white/25 text-white`}
+        className={`bg-[#12071f] sticky top-0  z-2 flex items-center justify-between px-10 py-5 font-f1 border-b-1 border-white/25 text-white`}
       >
         {/* The Thoughts of A Person */}
         <Link to="/" aria-label="Home" className="flex gap-x-2 items-center">
